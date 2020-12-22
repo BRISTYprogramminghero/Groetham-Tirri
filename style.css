@@ -2,6 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+   }
+   body {
+    overflow-x: hidden;
+  }
+  .hidden-thing {
+    position: absolute;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
 *{
     margin: 0%;
     padding: 0%;
@@ -9,6 +25,7 @@
 }
 body{
     font-family: "Poppins",sans-serif;
+    
 }
 body h1{
 color: #282f59;
@@ -38,7 +55,7 @@ header{
     background-image: url("./images/header-bg.png");
     background-repeat: no-repeat;
     min-height: 100vh;
-   
+   width: 100%;
 }
 .navbar{
     position: absolute;
@@ -205,7 +222,7 @@ background: var(--gradient-1);
 /* numbers */
 
 .number-section{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .number-text {
     font-size: 40px;
@@ -268,6 +285,7 @@ transition: transform 1s ease-in-out;
 .projects{
     margin-top: 80px;
     text-align: center;
+    overflow: hidden;
 }
 .projects h1{
     font-size: 40px;
@@ -312,7 +330,7 @@ transform: scaleX(1)
 /* team */
 
 .team{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .team-h1{
     font-size: 40px;
@@ -596,6 +614,76 @@ body.dark .team .team-h1{
     }
 }
 
-
+@media only screen and (max-width: 770px) {
+    .hero-img{
+        display: none;
+    }
+    .navbar{
+        
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding:10px 50px;
+        align-items: center;
+        font-size: 10px;
+        
+    }
+    .navbar ul li a{
+        list-style: none;
+        display: inline-block;
+        margin: 0 25px;
+        color: black;
+        display: flex;
+    }
+    .navbar ul{
+        
+        gap: 1px;
+        display: inline-block;
+    }
+    .circle img{
+        display: flex;
+        top: -10px;
+        left: -10%;
+        width: 700px;
+        z-index:-1 ;
+        animation: scaleup 6s ease-in-out infinite;
+    }
+    .mockup-img{
+      
+        display: bottom;
+    }
+    .number-section{
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 25px ;
+    }
+    .ctn{
+        padding: 5px 10px;
+        background: linear-gradient(
+            to bottom right,
+            yellow,
+            orange
+        );
+        border-radius: 50px;
+       
+    }
+    .leanrmore{
+        padding: 2px 5px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+    body {
+        overflow-x: hidden;
+      }
+      .hidden-thing {
+        position: absolute;
+        left: 50%;
+        width: 150px;
+        height: 25px;
+        opacity: 0;
+      }
+}
 
 
