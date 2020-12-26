@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 
-html, body {
-    height:100%;
-    padding:0;
-    margin:0;
-   }
    body {
     overflow-x: hidden;
   }
@@ -55,7 +50,7 @@ header{
     background-image: url("./images/header-bg.png");
     background-repeat: no-repeat;
     min-height: 100vh;
-   width: 100%;
+    width: 100%;
 }
 .navbar{
     position: absolute;
@@ -615,6 +610,12 @@ body.dark .team .team-h1{
 }
 
 @media only screen and (max-width: 770px) {
+    .html{
+        position: fixed;
+        width: 100%;
+        height: auto;
+
+    }
     .body {
         display: none;
     }
@@ -622,7 +623,6 @@ body.dark .team .team-h1{
         display: none;
     }
     .navbar{
-        
         top: 0;
         left: 0;
         display: flex;
@@ -636,21 +636,15 @@ body.dark .team .team-h1{
         list-style: none;
         display: inline-block;
         margin: 0 25px;
-        color: black;
+        color: white;
         display: flex;
     }
     .navbar ul{
-        
         gap: 1px;
         display: inline-block;
     }
-    .circle img{
-        display: flex;
-        top: -10px;
-        left: -10%;
-        width: 700px;
-        z-index:-1 ;
-        animation: scaleup 6s ease-in-out infinite;
+    .number-section{
+        display: inline;
     }
     .mockup-img{
       
@@ -663,7 +657,8 @@ body.dark .team .team-h1{
         font-size: 25px ;
     }
     .ctn{
-        padding: 5px 10px;
+        top: 15px;
+        padding: 5px 20px;
         background: linear-gradient(
             to bottom right,
             yellow,
@@ -690,6 +685,20 @@ body.dark .team .team-h1{
       .circle{
           display: none;
       }
+      .header{
+        min-height: 100vh;
+        width: 100%;
+    }
+    .testmonial p{
+         
+        text-align: center;
+    }
+    .contaner2{
+        display: inline;
+    }
+    .container{
+        display: inline;
+    }
 }
 
 
