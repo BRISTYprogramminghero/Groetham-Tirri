@@ -615,6 +615,9 @@ body.dark .team .team-h1{
 }
 
 @media only screen and (max-width: 770px) {
+    .body {
+        display: none;
+    }
     .hero-img{
         display: none;
     }
@@ -683,6 +686,9 @@ body.dark .team .team-h1{
         width: 150px;
         height: 25px;
         opacity: 0;
+      }
+      .circle{
+          display: none;
       }
 }
 
