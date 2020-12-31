@@ -610,95 +610,164 @@ body.dark .team .team-h1{
 }
 
 @media only screen and (max-width: 770px) {
-    .html{
-        position: fixed;
-        width: 100%;
-        height: auto;
-
+    *{
+        margin: 1 !important;
+        padding: 1 !important;
     }
-    .body {
-        display: none;
+    
+      html, .body {
+        overflow-x: hidden;
+        position: relative;
+        display: cover;
+        height: 100vh;
+        width: 100% !important;
+      }
+      .hidden-thing {
+          /* display: fixed; */
+        position: fixed;
+        left: 100%;
+        width: 20px; 
+        height: 50px;
+        opacity: 0;
+      }
+      body p{
+        font-size: 8px;
     }
     .hero-img{
         display: none;
     }
     .navbar{
-        top: 0;
-        left: 0;
-        display: flex;
         width: 100%;
         padding:10px 50px;
-        align-items: center;
         font-size: 10px;
         
     }
     .navbar ul li a{
         list-style: none;
-        display: inline-block;
-        margin: 0 25px;
+        display: inline;
+        margin: 0 50px;
         color: white;
         display: flex;
     }
-    .navbar ul{
-        gap: 1px;
-        display: inline-block;
-    }
-    .number-section{
-        display: inline;
-    }
-    .mockup-img{
-      
-        display: bottom;
-    }
-    .number-section{
-        margin-top: 50px;
-    }
-    h1{
-        font-size: 25px ;
-    }
+    .header-content{
+        flex-basis: 60%;
+        padding: 20px;
+        
+        }
     .ctn{
-        top: 15px;
-        padding: 5px 20px;
-        background: linear-gradient(
-            to bottom right,
-            yellow,
-            orange
-        );
+        padding: 8px 8px;
         border-radius: 50px;
+        font-size: 12px;
        
     }
     .leanrmore{
-        padding: 2px 5px;
-        border-radius: 50px;
-        font-size: 12px;
+        font-size: 10px;
     }
-    body {
-        overflow-x: hidden;
-      }
-      .hidden-thing {
-        position: absolute;
-        left: 50%;
-        width: 150px;
-        height: 25px;
-        opacity: 0;
-      }
-      .circle{
-          display: none;
-      }
-      .header{
-        min-height: 100vh;
-        width: 100%;
-    }
-    .testmonial p{
-         
-        text-align: center;
-    }
-    .contaner2{
-        display: inline;
+    .services{
+        margin-top: 5px;
+        margin: 0 !important;
+        padding: 0;
     }
     .container{
+        padding : 1rem;
+        display: flex;
+    }
+    .circle{
+        display: none;
+    }
+    .grid-box {
+        height: 100px;
+        padding: 15px;
+        z-index: 999;
+        width: 100px;
+        }
+    .grid-box img {
+     width: 50px;
+     height: 50px;
+     margin-bottom: 20px;
+     animation: scaleup 6s ease-in-out infinite;
+    
+    }
+    .grid-wrapper h1{
+        font-size: 15px;
+        padding: 5px;
+        margin: 1px;
+    }
+    .services-content{
+        padding: 1rem;
+        position: relative;
+        padding-top: -80px;
+        margin: -85px;
+    }
+    .number-text{
+        font-size: 20px;
+    }
+    .grid-box-m{
+        height: 180px;
+        padding: 1rem;
+        width: 200px;
+    }
+    .grid-box-m h1{
+        font-size: 30px;
+    }
+    .mockup-img img{
+        display: none !important;
+    }
+    .projects h1{
+        font-size: 30px;
+    }
+    .projects-images{
+        padding: 1rem;
+        display: inline-block;
+    }
+    .prj-imgs{
+        height: 250px;
+        width: 250px;
+    }
+    .team{
+        width: 90%;
+    }
+    #team h1{
+        font-size: 30px;
+    }
+   
+    .grid-wrapper-call{
+        padding: 1rem;
+    }
+    .review{
+        margin: 5px;
+        padding-right: 50px;
         display: inline;
     }
+
+    .profiles img{
+        width: 70px;
+        border-radius: 50%;
+        margin-right: 100px;
+    }
+    #Blogs h1{
+        font-size: 30px;
+    }
+    .Blog-grid-wrapper{
+        padding:1rem;
+    }
+    .getstarted{
+        margin-top: 20px;
+        padding:1rem;
+    }
+  
+    .footer{
+        margin-top: 80px;
+        background-size: cover;
+        width: 100%;
+    }
+#scrolltp{
+    padding: 5px;
+    right: 100px;
+    bottom: 40px;
 }
+    
+}
+
 
 
